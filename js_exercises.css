@@ -1,0 +1,30 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center; /* Centrar todo el contenido */
+}
+
+h1, h2 {
+    color: blue; /* Cambiar el color del texto de los títulos a azul */
+}
+
+p {
+    text-align: left; /* Alinear los párrafos a la izquierda */
+}
+
+button {
+    margin-top: 10px; /* Espacio superior para los botones */
+    padding: 8px 16px;
+    background-color: #4CAF50; /* Color de fondo verde */
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049; /* Cambiar el color de fondo al pasar el mouse */
+}
+

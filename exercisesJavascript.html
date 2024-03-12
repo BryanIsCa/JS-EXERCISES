@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Exercises</title>
+    <link rel="stylesheet" href="js_exercises.css">
+</head>
+<body>
+    <h1>Ejercicios de JavaScript</h1>
+
+    <!-- Ejercicio 1 -->
+    <div class="exercise">
+        <h2>Ejercicio 1: Concatenación de Cadena</h2>
+        <button onclick="runExercise1()">Mostrar resultado</button>
+        <p id="result1"></p>
+    </div>
+
+    <!-- Ejercicio 2 -->
+    <div class="exercise">
+        <h2>Ejercicio 2: Función de Duplicación de Números</h2>
+        <button onclick="runExercise2()">Mostrar resultado</button>
+        <p id="result2"></p>
+    </div>
+
+    <!-- Ejercicio 3 -->
+    <div class="exercise">
+        <h2>Ejercicio 3: Programa de Suma y Producto</h2>
+        <button onclick="runExercise3()">Mostrar resultado</button>
+        <p id="result3"></p>
+    </div>
+
+    <!-- Ejercicio 4 -->
+    <div class="exercise">
+        <h2>Ejercicio 4: Detector de Cursos Comunes</h2>
+        <button onclick="runExercise4()">Mostrar resultado</button>
+        <p id="result4"></p>
+    </div>
+
+    <!-- Ejercicio 5 -->
+    <div class="exercise">
+        <h2>Ejercicio 5: Manipulación de Array de Personas</h2>
+        <button onclick="runExercise5()">Mostrar resultado</button>
+        <p id="result5"></p>
+    </div>
+
+    <!-- Ejercicio 6 -->
+    <div class="exercise">
+        <h2>Ejercicio 6: Ordenación con Algoritmo de Burbuja</h2>
+        <button onclick="runExercise6()">Mostrar resultado</button>
+        <p id="result6"></p>
+    </div>
+
+    <script src="1-EjercicioConcatenaciónCadena.js"></script>
+    <script src="FunciónDuplicaciónNúmeros.js"></script>
+    <script src="ProgramaSumayProducto.js"></script>
+    <script src="DetectorCursosComunes.js"></script>
+    <script src="ManipulaciónArrayPersonas.js"></script>
+    <script src="OrdenaciónAlgoritmoBurbuja.js"></script>
+    
+    <script>
+        function runExercise1() {
+            document.getElementById("result1").innerText = arr.join(" ");
+        }
+
+        function runExercise2() {
+            let numbers = [1, 2, 4, 5];
+            let doubledArray = numbers.map(num => num * 2);
+            document.getElementById("result2").innerText = doubledArray.toString();
+        }
+
+        function runExercise3() {
+            let numbers = [1, 2, 3, 4];
+            let sum = numbers.reduce((acc, curr) => acc + curr, 0);
+            let product = numbers.reduce((acc, curr) => acc * curr, 1);
+            document.getElementById("result3").innerText = `Suma: ${sum}, Producto: ${product}`;
+        }
+
+        function runExercise4() {
+            let student1Courses = ['Math', 'English', 'Programming'];
+            let student2Courses = ['Geography', 'Spanish', 'Programming'];
+            let commonCourses = student1Courses.filter(course => student2Courses.includes(course));
+            document.getElementById("result4").innerText = commonCourses.toString();
+        }
+
+        function runExercise5() {
+            let people = ["Maria", "Dani", "Luis", "Juan", "Camila"];
+            // Operaciones según el ejercicio 5
+            // ...
+        }
+
+        function runExercise6() {
+            let inputArray = [3, 6, 12, 5, 100, 1];
+            let sortedArray = bubbleSort(inputArray);
+            document.getElementById("result6").innerText = sortedArray.toString();
+        }
+    </script>
+</body>
+</html>
+
